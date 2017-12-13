@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.corp.qunar.com:mfe/ymfe-homepage.git"
+    "url": "https://github.com/leeguooooo/MyPage.git"
   },
-  "author": "",
+  "author": "leeguooooo",
   "license": "ISC",
   "devDependencies": {
     "ghooks": "^2.0.0",
