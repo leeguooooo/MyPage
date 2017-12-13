@@ -1,0 +1,51 @@
+@import "./_settings";
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// by @wenbo.dong
+// 移动优先的设计理念：
+// 设计&编码时优先设计 超小屏幕（手机，小于 768px）这一域值的样式
+// 超过 768px 时，进行响应式 web 设计
+
+// 超小屏幕 手机
+@mixin media-xs() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+// 【不推荐】 小屏幕 平板 将 CSS 的影响限制在更小范围的屏幕大小之内
+@mixin media-sm-limit() {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        @content;
+    }
+}
+// 小屏幕 平板 移动优先: 大于 768px 时执行
+@mixin media-sm() {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+// 【不推荐】 小屏幕 平板 将 CSS 的影响限制在更小范围的屏幕大小之内
+@mixin media-md-limit() {
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        @content;
+    }
+}
+// 小屏幕 平板 移动优先: 大于 992px 时执行
+@mixin media-md() {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+// 中等屏幕 桌面显示器
+@mixin media-lg() {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

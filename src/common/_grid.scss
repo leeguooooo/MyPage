@@ -1,0 +1,67 @@
+@import "./_mixins.scss";
+
+// container 公用样式
+@mixin containerBoxStyle {
+    padding: 0 16px;
+    margin: 0 auto;
+}
+// 清除浮动
+@mixin clearFix {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+// 行样式
+.row {
+	box-sizing: border-box;
+	width: 100%;
+}
+.row:after {
+	@include clearFix;
+}
+
+// 根据域值 生成栅格布局
+@mixin generateGrid($tag) {
+    @for $i from 1 through 12 {
+        .col-#{$tag}-#{$i} {
+            width: (100% / 12 * $i);
+            float: left;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+// 媒体查询
+@include media-xs() {
+	@include generateGrid('xs');
+    .container {
+        width: 100%;
+        @include containerBoxStyle;
+    }
+}
+@include media-sm() {
+    @include generateGrid('sm');
+    .container {
+        width: 750px;
+        @include containerBoxStyle;
+    }
+}
+@include media-md() {
+    @include generateGrid('md');
+    .container {
+        width: 970px;
+        @include containerBoxStyle;
+    }
+}
+@include media-lg() {
+    @include generateGrid('lg');
+    .container {
+        width: 1170px;
+        @include containerBoxStyle;
+    }
+}

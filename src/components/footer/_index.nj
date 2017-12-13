@@ -1,0 +1,7 @@
+<footer class="m-footer">
+    <span itemprop="copyright">&copy;</span>&nbsp;<span itemprop="copyrightYear">2018</span>
+    <span class="with-love">
+        <i class="icon-next-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">郭立的个人站</span> 京ICP备17022554号-1
+</footer>

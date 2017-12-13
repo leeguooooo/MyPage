@@ -15,7 +15,7 @@ Lightweight front-end framework based on [redux](https://github.com/reactjs/redu
 
 ---
 ## Quick Start
-- ```npm run dev //Use of project development process, start service, refresh in real time```
+- ```npm start //Use of project development process, start service, refresh in real time```
 - ```npm run build //After the development is completed, the package file (JS, CSS is packaged separately)```
 -
 ## Features

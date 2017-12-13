@@ -1,0 +1,109 @@
+@import "../common/_grid";
+@import "./responsive-nav";
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('//s.qunarzz.com/ymfe/fonts/0.1.6/ymfe.eot'); /* IE9*/
+	src: url('//s.qunarzz.com/ymfe/fonts/0.1.6/ymfe.woff') format('woff'), /* chrome、firefox */
+	url('//s.qunarzz.com/ymfe/fonts/0.1.6/ymfe.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('//s.qunarzz.com/ymfe/fonts/0.1.6/ymfe.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+	font-family: iconfont;
+	font-size: 16px;
+	color: rgba(255, 255, 255, .85);
+	line-height: 64px;
+	position: absolute;
+	top: 0;
+	right: 16px;
+}
+
+.nav-icon {
+	font-family: iconfont;
+}
+
+.header {
+	height: 64px;
+	background-color: #333;
+	.header-logo {
+		line-height: 64px;
+		height: 64px;
+	}
+	.header-logo .link {
+		-webkit-font-smoothing: auto;
+		color: rgba(255, 255, 255, .85);
+		transition: color .25s;
+		&:hover {
+			color: $color-red;
+		}
+	}
+	.m-header-container {
+		background-color: #333;
+		position: relative;
+		z-index: 1;
+		padding: 0 16px;
+		opacity: 1;
+		transition: all .25s;
+		@include media-xs() {
+			width: 100%;
+		}
+		@include media-sm-limit() {
+			width: 100%;
+		}
+		@include media-md() {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	.link {
+		list-style: none;
+		text-decoration: none;
+		color: rgba(255, 255, 255, .85);
+		font-size: 16px;
+	}
+	.m-header-nav {
+		-webkit-font-smoothing: antialiased;
+		.m-nav-ul {
+			@include media-md() {
+				height: 64px;
+			}
+		}
+		.item {
+			@include media-md() {
+				width: auto;
+				display: inline-block;
+				line-height: 64px;
+			}
+		}
+		.link {
+			display: inline-block;
+			width: 100%;
+			line-height: 36px;
+			transition: all .25s;
+			@include media-md() {
+				line-height: 64px;
+				padding: 0 16px;
+			}
+			&:hover {
+				color: $color-red;
+			}
+		}
+	}
+	.link.out:after {
+		content: '\f4f3';
+		position: relative;
+		left: 4px;
+		top: 1px;
+		font-size: 14px;
+		opacity: 0;
+		color: rgba(255, 255, 255, .85);
+		transition: all .25s;
+	}
+	.link.out:hover {
+		&:after {
+			opacity: 1;
+			color: $color-red;
+		}
+	}
+}

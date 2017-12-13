@@ -1,0 +1,57 @@
+@import "./_variables.scss";
+// Device Width
+$on-phone: 767px;
+$on-pad:   991px;
+
+
+$border-max-width: 1170px;
+$box-shadow-big: 0 2px 31px 0 rgba(0,0,0,.08);
+
+body {
+  word-break: break-all;
+}
+
+@font-face {
+	font-family: 'ymfe';
+	src: url('https://s.qunarzz.com/ymfe/rustyColaPen/RustyColaPen-Regular-2.ttf'); /* IE9*/
+	// src: url('../fonts/ymfe.woff') format('woff'), /* chrome、firefox */
+}
+.ymfe {
+	font-family: ymfe;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('//s.qunarzz.com/ymfe/fonts/0.1.5/ymfe.eot'); /* IE9*/
+	src: url('//s.qunarzz.com/ymfe/fonts/0.1.5/ymfe.woff') format('woff'), /* chrome、firefox */
+	url('//s.qunarzz.com/ymfe/fonts/0.1.5/ymfe.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('//s.qunarzz.com/ymfe/fonts/0.1.5/ymfe.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+	font-family: iconfont;
+	font-size:16px;
+	color: #fff;
+}
+
+.m-page-title {
+	text-align: center;
+	padding: 40px 0 0;
+	-webkit-font-smoothing: antialiased;
+  h1 {
+      font-size: 28px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  h3 {
+      font-size: 16px;
+  }
+	.desc {
+		font-size: 18px;
+		line-height: 1.8;
+	}
+}
+.title {
+  font-weight: normal;
+  color: $color-red;
+}

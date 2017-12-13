@@ -1,0 +1,79 @@
+.tq-photo-wall {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.tq-photo-wall .current, .tq-photo-wall .next {
+    position: absolute;
+    top: 0;
+
+    width: 10000px;
+    height: 100%;
+}
+
+.tq-photo-wall .current {
+    left: 0;
+}
+
+.tq-photo-wall .next {
+    left: 10000px;
+}
+
+.tq-photo-wall .avatar-wrapper {
+    position: absolute;
+
+    animation: zoomIn .5s, shake 40s infinite;
+}
+
+.tq-photo-wall .avatar-wrapper:hover {
+    z-index: 9999;
+}
+
+.tq-photo-wall .avatar {
+    width: 100%;
+    height: 100%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background-size: cover;
+
+    transform-origin: 66% 66% 0;
+    transition: transform 0.2s;
+}
+
+.tq-photo-wall .avatar:hover {
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5), 0 0 16px rgba(0, 0, 0, .1);
+}
+
+.tq-photo-wall .avatar.kuso {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3), 0 0 16px rgba(246, 83, 20, .5);
+}
+
+/* animate */
+@keyframes zoomIn {
+    from {
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate(-4px, 0);
+    }
+
+    20%, 80% {
+        transform: translate(4px, 2px);
+    }
+
+    30%, 50%, 70% {
+        transform: translate(0, -4px);
+    }
+
+    40%, 60% {
+        transform: translate(2px, 4px);
+    }
+}

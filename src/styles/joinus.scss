@@ -1,0 +1,102 @@
+@import "../common/_mixins";
+@import "../common/_settings";
+@import "../common/_normalize";
+@import "../common/_colors";
+@import "../common/_grid";
+@import "../common/_variables";
+@import "../components/aside/index";
+@import "../components/header/index";
+@import "../components/footer/index";
+
+.m-page-title {
+	.desc {
+		color: $color-text-gray;
+	}
+}
+
+.m-outer {
+	padding: 24px 0;
+	@include media-md {
+		padding: 48px 0;
+	}
+;
+}
+
+.m-outer.gray {
+	background-color: #fcf8f6;
+}
+
+.m-item {
+	-webkit-font-smoothing: antialiased;
+	.m-item-logo {
+		display: flex;
+		justify-content: center;
+		padding: 24px;
+	}
+	.m-item-content {
+		.title {
+			font-size: 20px;
+		}
+		.subtitle {
+			margin-top: -10px;
+		}
+		.desc {
+			padding: 0;
+			font-size: 16px;
+			color: #6f7c82;
+			line-height: 1.5;
+		}
+		.item {
+			list-style: circle;
+			margin-left: 2em;
+		}
+	}
+}
+
+.m-provide {
+	background-color: #ce4718;
+	color: rgba(255, 255, 255, .85);
+	-webkit-font-smoothing: antialiased;
+	.title {
+		font-size: 32px;
+		text-align: center;
+		color: rgba(249, 247, 17, 0.85);
+	}
+	.m-provide-item {
+		padding: 24px 0;
+		@include media-md {
+			padding: 40px 0;
+		}
+	;
+	}
+	.m-provide-title {
+		font-size: 26px;
+		.name {
+			margin: 16px;
+		}
+		.iconfont {
+			position: relative;
+			font-size: 24px;
+			vertical-align: -4%;
+			padding-right: .4em;
+		}
+	}
+	.m-provide-desc {
+		font-size: 18px;
+	}
+	@for $i from 1 to 10 {
+		$alpha: 0.05 * $i;
+		.shadow-#{$i} {
+			background-color: rgba(229, 219, 103, $alpha);
+		}
+	}
+}
+
+.m-connect {
+	-webkit-font-smoothing: antialiased;
+	.item {
+		font-size: 18px;
+		color: #6f7c82;
+		line-height: 1.8;
+	}
+}

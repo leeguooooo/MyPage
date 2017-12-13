@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    {% include "./components/head/_index.nj" %}
+    <link rel="stylesheet" href="./styles/projects.css"/>
+    <script type="text/javascript" src="https://g.ymfe.org/data.js"></script>
+</head>
+<body>
+<div class="m-projects-page js-page">
+    <!-- aside -->
+    <!-- 侧边栏 -->
+    {% include "./components/aside/_index.nj" %}
+    <!-- header -->
+    <!-- 头部 -->
+    {% include "./components/header/_index.nj" %}
+    <!-- cover -->
+    <!-- 封面 -->
+    <section class="m-projects-cover">
+        <img class="cover-img js-cover-img" src="https://ws1.sinaimg.cn/large/006cGJIjly1fl08gy6xwej31hc0nmasg.jpg"
+             alt="xx">
+        <div class="cover-fullname-logo js-cover-intro">
+            <p class="fullname-logo ymfe">High-Quality Projects!</p>
+            <p class="fullname-desc">我们奉行工程师文化，用软件创造世界，改造世界<br/>
+                经历无数业务锤炼后，优质项目将开源分享</p>
+        </div>
+    </section>
+    <!--项目介绍 内容部分-->
+    <div class="m-projects-main">
+        <section class="main-content">
+            <div id="nav-container" class="content-projects-nav-container">
+                <div class="projects-nav-btn icon-font"></div>
+                <ul class="content-projects-nav container"></ul>
+            </div>
+            <div class="nav-standby"></div>
+            <div class="content-projects-container"></div>
+        </section>
+    </div>
+    <!-- footer -->
+    <!-- 尾部 -->
+    {% include "./components/footer/_index.nj" %}
+</div>
+</body>
+
+<script src="./scripts/app.js"></script>
+<script src="./scripts/projects.js"></script>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    {% include "./components/head/_index.nj" %}
+    <link rel="stylesheet" href="./styles/about.css"/>
+    <link rel="stylesheet" href="./photoWall/photoWall.css">
+</head>
+<body>
+<div class="m-about-page js-page">
+    <!-- aside -->
+    <!-- 侧边栏 -->
+    {% include "./components/aside/_index.nj" %}
+    <!-- header -->
+    <!-- 头部 -->
+    {% include "./components/header/_index.nj" %}
+    <article class="m-about-us">
+        <div class="content">
+            <h1>关于我们</h1>
+            <p>去哪儿网移动架构组（YMFE）是由 FE，iOS 和 Android 工程师共同组成的，去哪儿最具想象力、创造力和影响力的大前端团队</p>
+            <p>我们致力于为业务开发提供一体化的移动开发解决方案，努力提升各个产品线在移动端的开发效率及使用体验</p>
+        </div>
+    </article>
+    <div class="m-photo-wall js-photo-wall"></div>
+    <article class="m-what-we-do">
+        <div class="content">
+            <div class="main">
+                <div class="inner">
+                    <h2>我们在做什么</h2>
+                    <p>目前，我们产出的框架和基础服务已运行在去哪儿网无数项目之中。</p>
+                    <p>不仅仅如此，我们还希望持续改进和完善这些解决方案，以期帮助各个业务线打造出最好的产品：</p>
+                    <ul>
+                        <li>公司移动解决方案架构设计，核心框架代码开发；</li>
+                        <li>业务辅助平台和效率工具开发；</li>
+                        <li>基础服务及其他公司通用的工具服务的开发和维护；</li>
+                        <li>前沿技术调研、开发方式创新；</li>
+                        <li>还有很多。。。</li>
+                    </ul>
+                </div>
+            </div>
+            <aside>
+                <div class="inner">
+                    <article class="article" onClick="window.open('./projects.html', '_self')">
+                        <h3>技术框架</h3>
+                        <ul>
+                            <li>React 技术栈：QRN、QReact、React Web 等</li>
+                            <li>Hybrid 技术：Hy2、Yo等</li>
+                            <li>Avalon、小程序等</li>
+                        </ul>
+                    </article>
+                    <article class="article" onClick="window.open('./projects.html', '_self')">
+                        <h3>工具与平台</h3>
+                        <ul>
+                            <li>效率工具：YApi、YShow、Ydoc等</li>
+                            <li>构建部署：YKit、QP热更新等</li>
+                            <li>YStats、开放平台等</li>
+                        </ul>
+                    </article>
+                    <article class="article" onClick="window.open('./projects.html', '_self')">
+                        <h3>其他项目</h3>
+                        <ul>
+                            <li>客户端调试、静态资源管理等</li>
+                        </ul>
+                    </article>
+                </div>
+            </aside>
+        </div>
+    </article>
+    <article class="m-our-style">
+        <div class="content">
+            <div class="main">
+                <div class="inner">
+                    <h2>我们的风格:</h2>
+                    <ul>
+                        <li>不仅仅是工程师，更是团队的建设者。</li>
+                        <li>你可以参与每一个项目，只要你能贡献你的力量。</li>
+                        <li>我们不会很明确地要求你做什么、怎么做，你需要自己思考去做什么、怎么做，给你更大的创新空间。</li>
+                        <li>我们有自己的技术产品和用户，人人都是 PM，需要主动发现并解决遇到的问题，或者提出更好的方案并实现。</li>
+                        <li>我们不在意你的学历和过去，只在意你现在的理想。</li>
+                    </ul>
+                </div>
+            </div>
+            <aside>
+                <div class="inner">
+                    <div class="photo"></div>
+                </div>
+            </aside>
+        </div>
+    </article>
+    <article class="m-join-us">
+        <div class="content">
+            <div class="main">
+                <h2>对我们的工作很感兴趣？</h2>
+                <p>快来加入我们吧！我们欢迎有共同理想的同事一起奋斗！</p>
+            </div>
+            <aside>
+                <button onClick="window.open('./joinus.html', '_self')">查看职位</button>
+            </aside>
+        </div>
+    </article>
+    {% include "./components/footer/_index.nj" %}
+</div>
+<script src="./photoWall/photoWall.js"></script>
+<script src="./scripts/about.js"></script>
+<script src="./scripts/app.js"></script>
+</body>
+</html>

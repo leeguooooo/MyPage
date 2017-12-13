@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    {% include "./components/head/_index.nj" %}
+    <link rel="stylesheet" href="./styles/joinus.css"/>
+    <link rel="stylesheet" href="./photoWall/photoWall.css">
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+</head>
+<body>
+<div class="m-joinus-page js-page">
+    <!-- aside -->
+    <!-- 侧边栏 -->
+    {% include "./components/aside/_index.nj" %}
+    {% include "./components/header/_index.nj" %}
+    <div class="container">
+        <div class="row m-page-title">
+            <div class="content">
+                <h1 class="title">加入我们</h1>
+                <p class="desc">去哪儿网移动架构组（ YMFE ）2017 首次社招</p>
+                <p class="desc">此次招聘的职级为：q14-q18（ 对应之前的级别为：12-14 ）</p>
+            </div>
+        </div>
+    </div>
+    <div class="m-outer">
+        <div class="container">
+            <div class="row m-item">
+                <div class="col-sm-3 m-item-logo">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="150px" height="150px" viewBox="0 0 200 200" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+                        <title>HTML5</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="HTML5" fill-rule="nonzero">
+                                <path d="M0.0693609672,100 C0.0693604352,135.701779 19.1160325,168.691584 50.0346801,186.542473 C80.9533276,204.393363 119.046672,204.393363 149.96532,186.542473 C180.883967,168.691584 199.93064,135.701779 199.930639,100 C199.930639,44.809832 155.190168,0.0693609672 100,0.0693609672 C44.809832,0.0693609672 0.0693609672,44.809832 0.0693609672,100 Z"
+                                      id="Shape" fill="#E1E1E1"></path>
+                                <polygon id="Shape" fill="#E44D26"
+                                         points="44.1818307 45.7912263 157.202073 45.7912263 146.928912 161.223351 100.532781 174.226736 54.4549914 161.223351"></polygon>
+                                <polygon id="Shape" fill="#E44D26"
+                                         points="53.9376857 56.8757168 62.4378584 152.382729 100.559309 163.140035 100.691952 163.098031 100.691952 56.8757168"></polygon>
+                                <polygon id="Shape" fill="#F26528"
+                                         points="147.446218 56.8757168 100.691952 56.8757168 100.691952 163.098031 138.946045 152.382729"></polygon>
+                                <polygon id="Shape" fill="#EFEFEF"
+                                         points="133.081036 85.7144041 134.277029 72.6469085 68.2564421 72.6469085 71.7670466 112.525872 117.464594 112.525872 115.822038 129.554957 101.109775 133.514335 86.472677 129.554957 85.4999655 119.098307 72.4324698 119.098307 74.0794473 139.859067 101.109775 147.326839 101.414853 147.326839 101.414853 147.256097 128.2219 139.859067 131.951364 99.2328843 83.8551986 99.2328843 82.7365803 85.7188256 133.069983 85.7188256"></polygon>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-sm-9 m-item-content">
+                    <h2 class="title" id="高级/资深前端工程师（Open）" class="title">高级/资深前端工程师（Open）</h2>
+                    <p class="desc subtitle">我们可能会需要你做以下这些事情：</p>
+                    <ul class="desc">
+                        <li class="item">移动端解决方案架构设计，核心框架代码开发。例如 Hybrid、React Native 相关工作等；</li>
+                        <li class="item">改进和优化现有的前端工具链和前端开发流程；</li>
+                        <li class="item">效率工具及通用服务开发；</li>
+                        <li class="item">前沿技术调研、开发方式创新；</li>
+                    </ul>
+                    <h2 class="title" id="职位要求">职位要求</h2>
+                    <ul class="desc">
+                        <li class="item">敏锐的技术敏感度，对技术有饱满的热情；</li>
+                        <li class="item">有 Hybrid, React, React Native, Vue 等时髦技术的开发经验；</li>
+                        <li class="item">有丰富的 Web 标准、易用性、浏览器端原理以及网站性能优化等方面的知识；</li>
+                        <li class="item">有独立的产品意识，能负责一个完整的项目技术选型及实施；</li>
+                        <li class="item">有团队协作精神，善于学习，乐于探索，不墨守陈规；</li>
+                        <li class="item">4年以上的前端开发经验；</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-outer gray">
+        <div class="container">
+            <div class="row m-item">
+                <div class="col-sm-3 m-item-logo">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="150px" height="150px" viewBox="0 0 200 200" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+                        <title>ios</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ios" fill-rule="nonzero">
+                                <path d="M199.959027,100.080761 C199.959027,155.132568 155.335536,199.998579 100.041209,199.998579 C44.9894016,199.998579 0.123391111,155.375087 0.123390909,100.080761 C0.123390909,45.0289531 44.7468826,0.162942626 100.041209,0.162942424 C155.093017,0.405461414 199.959027,45.0289531 199.959027,100.080761 Z"
+                                      id="Shape" fill="#E44D26"></path>
+                                <path d="M113.622272,58.6100158 C117.502576,53.7596362 120.170284,47.2116238 119.442727,40.6636115 C113.864791,40.9061305 107.07426,44.5439152 103.193956,49.1517758 C99.5561713,53.2745984 96.4034246,60.0651297 97.3735006,66.613142 C103.436475,67.09818 109.741968,63.2178764 113.622272,58.6100158 L113.622272,58.6100158 Z M127.688373,100.565799 C127.688373,95.957938 128.658448,92.3201533 130.356081,89.1674069 C133.751347,82.6193945 139.329284,79.2241289 139.571802,78.9816097 C133.02379,69.2808507 122.837993,68.0682558 119.200208,67.8257368 C110.469525,66.8556608 102.466399,72.9186354 98.1010574,72.9186354 C93.7357158,72.9186354 86.9451844,67.8257368 79.9121341,68.0682558 C70.4538941,68.3107747 61.7232109,73.6461921 56.8728315,82.1343564 C55.4177176,84.8020651 54.2051228,87.7122927 53.4775659,90.6225206 C49.3547432,106.871292 55.9027556,127.000367 63.9058818,138.883797 C68.5137424,145.674328 74.0916788,153.434936 81.3672481,153.192417 C88.4002984,152.949898 91.0680071,148.584556 99.5561713,148.584556 C108.044336,148.584556 110.469525,153.192417 117.987614,153.192417 C125.505702,152.949898 130.356081,146.159366 134.963942,139.368835 C140.299359,131.365709 142.48203,123.605101 142.724549,123.362582 C142.48203,123.120063 127.930892,117.542127 127.688373,100.565799 L127.688373,100.565799 Z"
+                                      id="Shape" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-sm-9 m-item-content">
+                    <h2 class="title" id="高级/资深iOS工程师（Open）">高级/资深 iOS 工程师（Open）</h2>
+                    <p class="desc subtitle">你可能要面临这些挑战：</p>
+                    <ul class="desc">
+                        <li class="item">负责 React Native，Hybrid 等框架 iOS 端的研发和探索；</li>
+                        <li class="item">协同前端以及 Android 团队，独立完成框架的设计与开发；</li>
+                        <li class="item">不断在可用性，可维护性和性能等方面做到极致；</li>
+                    </ul>
+
+                    <h2 class="title" id="职位要求-1">职位要求</h2>
+                    <ul class="desc">
+                        <li class="item">精通 Objective-C/C/C++，具有良好的编码规范，较强 Debug 能力；</li>
+                        <li class="item">熟练掌握 iOS 各个 UI 组件的使用，并能够高度自定义 UI 组件；</li>
+                        <li class="item">熟练掌握 block、runtime、GCD 等相关知识；</li>
+                        <li class="item">熟悉 App 内存占用、耗电、网络、UI 渲染等性能方面分析和优化的方法；</li>
+                        <li class="item">扎实的数据结构算法基础，熟悉面向对象方法和常用设计模式；</li>
+                        <li class="item">熟悉 JavaScript 等其他语言；</li>
+                        <li class="item">有独立解决问题的能力和很强的学习能力；</li>
+                        <li class="item">具备优秀的沟通和协调能力，良好的服务精神及团队合作能力，责任心强；</li>
+                        <li class="item">具有大型 APP 开发经验，APP 上架作品，熟悉 Python，熟悉 Android 开发，服务端开发经验，做过框架 SDK 等相关工作者优先；</li>
+                        <li class="item">具有较强的文档编写能力（有原创 blog 者优先）；</li>
+                        <li class="item">有 React Native，Hybrid，Weex 等开发经验优先；</li>
+                        <li class="item">4年以上 iOS 平台软件开发经验；</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-outer">
+        <div class="container">
+            <div class="row m-item">
+                <div class="col-sm-3 m-item-logo">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+                        <title>android</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="android" fill-rule="nonzero" fill="#E44D26">
+                                <path d="M63.2289088,38.5002028 C62.4561422,38.5002028 61.6876392,38.8182805 61.1415347,39.3648965 C60.5954303,39.9110008 60.276841,40.680186 60.276841,41.4519295 C60.276841,42.2260607 60.5952598,42.9928582 61.1415347,43.5393037 C61.687639,44.0864313 62.456142,44.4039973 63.2289088,44.4039973 C64.0023578,44.4039973 64.7694963,44.0866018 65.3169652,43.5393037 C65.8627285,42.9928582 66.1809767,42.2260607 66.1809767,41.4519295 C66.1809767,40.680186 65.862899,39.9110008 65.3169652,39.3648965 C64.7694963,38.8184512 64.0025283,38.5002028 63.2289088,38.5002028 Z M75.00307,0.0649926667 C33.6157918,0.0649926667 0.0651631667,33.6105048 0.0651631667,74.9974418 C0.0651631667,116.384379 33.6157918,149.935007 75.00307,149.935007 C116.384208,149.935007 149.934837,116.384379 149.934837,74.9974418 C149.934837,33.6105048 116.381138,0.0649926667 75.00307,0.0649926667 Z M61.4855362,32.5878808 L60.3812182,30.9233028 L59.282699,29.2831135 L56.8327333,25.6036455 C56.534269,25.150662 56.652802,24.5387248 57.1068088,24.2402605 C57.5597923,23.9417962 58.1710473,24.0606703 58.4732637,24.514336 L61.1050367,28.4613985 L62.203897,30.120519 L63.3271462,31.8026638 C66.8807475,30.424782 70.8457178,29.650992 75.0245593,29.650992 C79.207835,29.650992 83.179798,30.424782 86.7277712,31.8026638 L87.8513613,30.120519 L88.9560203,28.4613985 L91.5884755,24.514336 C91.8862577,24.0606703 92.4985358,23.9358268 92.9542482,24.2402605 C93.3992158,24.5419653 93.5262763,25.1506618 93.2221838,25.6036455 L90.7722182,29.2831135 L89.6794977,30.9233028 L88.5692105,32.5878808 C96.9187068,36.4706457 102.567869,43.837768 102.567869,52.2715167 L47.490289,52.2715165 C47.490289,43.837768 53.1343343,36.4737155 61.4855362,32.5878808 Z M43.5553355,87.351647 C43.5553355,90.6149705 40.9107712,93.253395 37.651541,93.253395 C34.3916285,93.253395 31.7540568,90.6149705 31.7540568,87.351647 L31.7540567,62.1092413 C31.7540567,58.8472823 34.391799,56.2074933 37.6515408,56.2074933 C40.910771,56.2074933 43.5553353,58.8472822 43.5553353,62.1092413 L43.5553355,87.351647 Z M102.57128,61.1169753 L102.568551,61.1169753 L102.568551,99.48857 C102.568551,102.924491 99.7805535,105.717947 96.3395158,105.717947 L91.8443023,105.717947 C91.9935345,106.241027 92.075399,106.789689 92.075399,107.351655 L92.075399,119.813307 C92.075399,123.069809 89.4366333,125.714885 86.1748448,125.714885 C82.918855,125.714885 80.2739497,123.069638 80.2739497,119.813307 L80.2739497,107.351655 C80.2739497,106.785596 80.3564963,106.241027 80.5120388,105.717947 L69.5503828,105.717947 C69.699615,106.241027 69.7821617,106.789689 69.7821617,107.351655 L69.7821617,119.813307 C69.7821617,123.069809 67.1372562,125.714885 63.8812665,125.714885 C60.624765,125.714885 57.9798597,123.069638 57.9798597,119.813307 L57.9798597,107.351655 C57.9798597,106.785596 58.0624063,106.241027 58.2174373,105.717947 L53.7165955,105.717947 C50.2803333,105.717947 47.49063,102.924491 47.49063,99.48857 L47.49063,56.2076638 L102.571621,56.2076638 L102.571621,61.1169753 L102.57128,61.1169753 Z M118.307171,87.351647 C118.307171,90.6149705 115.668746,93.253395 112.410028,93.253395 C109.147728,93.253395 106.503505,90.6149705 106.503505,87.351647 L106.503505,62.1092413 C106.503505,58.8472823 109.147728,56.2074933 112.410028,56.2074933 C115.665335,56.2074933 118.307171,58.8472822 118.307171,62.1092413 L118.307171,87.351647 Z M86.8355595,38.5002028 C86.0621105,38.5002028 85.2939487,38.8182805 84.7475032,39.3648965 C84.2010577,39.9110008 83.8824683,40.680186 83.8824683,41.4519295 C83.8824683,42.2260607 84.2008872,42.9928582 84.7475032,43.5393037 C85.2939487,44.0864313 86.0621105,44.4039973 86.8355595,44.4039973 C87.6079852,44.4039973 88.3754648,44.0866018 88.9229337,43.5393037 C89.468697,42.9928582 89.7869452,42.2260607 89.7869452,41.4519295 C89.7869452,40.680186 89.4688675,39.9110008 88.9229337,39.3648965 C88.3754648,38.8184512 87.6081557,38.5002028 86.8355595,38.5002028 Z"
+                                      id="Shape"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-sm-9 m-item-content">
+                    <h2 class="title" id="高级/资深Android工程师（Open）">高级/资深 Android 工程师（Open）</h2>
+                    <p class="desc subtitle">这些点可能是你需要关注的：</p>
+                    <ul class="desc">
+                        <li class="item">负责 Hybrid、React Native 等框架 Android 端的研发和探索；</li>
+                        <li class="item">协同前端以及 iOS 团队，独立完成框架的设计与开发；</li>
+                        <li class="item">及时掌握新的 Android 相关的技术点。</li>
+                    </ul>
+
+                    <h2 class="title" id="职位要求-2">职位要求</h2>
+                    <ul class="desc">
+                        <li class="item">了解操作系统原理，掌握常见的数据结构和算法，熟练掌握 Java 语言，对数据结构有深入的理解，有好的编程习惯；</li>
+                        <li class="item">4年以上 Android 开发经验，至少参加过一个完整的商业级手机应用开发项目；</li>
+                        <li class="item">精通 Android 开发平台及框架原理；</li>
+                        <li class="item">对面向对象设计开发有深入的理解；</li>
+                        <li class="item">有 sdk 相关经验优先；</li>
+                        <li class="item">有 JavaScript 经验的优先。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-provide">
+        <div class="m-provide-item shadow-0">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title" id="我们能给你提供什么">我们能给你提供什么</h2>
+                </div>
+            </div>
+        </div>
+        <div class="m-provide-item shadow-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 m-provide-title">
+                        <p class="name"><span class="iconfont">&#xf08f;</span>待遇</p>
+                    </div>
+                    <div class="col-sm-9 m-provide-desc">
+                        <p class="text">现金不低于 40W 的年薪，待遇范围：(25k-40k)*16；</p>
+                        <p class="text">另有不菲的股票期权激励；</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-provide-item shadow-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 m-provide-title">
+                        <p class="name"><span class="iconfont">&#xf0da;</span>环境</p>
+                    </div>
+                    <div class="col-sm-9 m-provide-desc">
+                        <p class="text">Macbook pro，超大显示器不在话下；</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-provide-item shadow-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 m-provide-title">
+                        <p class="name"><span class="iconfont">&#xf4d8;</span>团队</p>
+                    </div>
+                    <div class="col-sm-9 m-provide-desc">
+                        <p class="text">体验在大前端团队工作的快感（FE + iOS + Android）；</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-provide-item shadow-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 m-provide-title">
+                        <p class="name"><span class="iconfont">&#xf0cb;</span>Github</p>
+                    </div>
+                    <div class="col-sm-9 m-provide-desc">
+                        <p class="text">我们是去哪儿网移动架构组（YMFE），我们在 Github 上有众多的开源项目；</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-provide-item shadow-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 m-provide-title">
+                        <p class="name"><span class="iconfont">&#xf35c;</span>前景</p>
+                    </div>
+                    <div class="col-sm-9 m-provide-desc">
+                        <p class="text">我们有国内最广泛的 React Native 应用，包括最深入的 React Native 解决方案；</p>
+                        <p class="text">此外我们还给你留了一堆难度很大的事情等你来挑战；</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-provide-item shadow-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 m-provide-title">
+                        <p class="name"><span class="iconfont">&#xf3bd;</span>低调</p>
+                    </div>
+                    <div class="col-sm-9 m-provide-desc">
+                        <p class="text">但是我们很低调，我们团队还有杜瑶，司徒正美等前端业界红人。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-outer">
+        <div class="container m-connect">
+            <div class="row">
+                <h2 class="title" id="联系方式">联系方式</h2>
+                <ul class="desc">
+                    <li class="item">joy.du@qunar.com</li>
+                    <li class="item">tonya.li@qunar.com</li>
+                    <li class="item">工作地点：北京</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% include "./components/footer/_index.nj" %}
+<div>
+</div>
+</body>
+<script src="./scripts/app.js"></script>
+</html>

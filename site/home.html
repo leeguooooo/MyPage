@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<title>LEE - 个人博客</title>
+<link rel="apple-touch-icon" href="icon.png"/>
+<link rel="apple-touch-icon-precomposed" href="icon.png"/>
+<link rel="shortcut icon" href="./favicon.ico"/>
+<script type="text/javascript" src="./scripts/jquery.min.js"></script>
+<script type="text/javascript" src="./scripts/responsive-nav.min.js"></script>
+<script type="text/javascript" src="https://g.ymfe.org/data.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./styles/home.css"/>
+</head>
+<body class="loading default">
+<!-- loading -->
+<!-- 加载页 -->
+<!-- <div class="loading-page">
+    <div class="loading-icon">
+        <div class="loading-progressbar js-loading-progressbar"></div>
+        <div class="loading-logo">
+        <?xml version="1.0" encoding="UTF-8"?>
+         include "./components/svg/ymfe.svg"
+        </div>
+        <p class="loading-text js-loading-text"></p>
+    </div>
+</div> -->
+
+
+<div class="page js-page">
+
+    <!-- aside -->
+    <!-- 侧边栏 -->
+    <aside class="aside">
+        <div class="nav-icon js-nav-icon">
+            <div class="nav-icon-line top"></div>
+            <div class="nav-icon-line middle"></div>
+            <div class="nav-icon-line bottom"></div>
+        </div>
+    </aside>
+
+    <!-- header -->
+    <!-- 头部 -->
+    <header class="header">
+    <div class="container m-header-container">
+        <div class="header-logo"><a class="link ymfe" href="./index.html">首页</a></div>
+        <div class="m-header-nav">
+            <nav class="nav-collapse m-nav">
+                <ul class="m-nav-ul">
+                    <li class="item"><a class="link out nav-icon" href="https://blog.leeguoo.com/">博客</a></li>
+                    <li class="item"><a class="link" href="https://github.com/leeguooooo">GitHub</a></li>
+                    <li class="item"><a class="link out nav-icon" href="https://weibo.com/12491851">WeiBO</a></li>
+                    <li class="item"><a class="link out nav-icon" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
+                    <li class="item"><a class="link" href="https://blog.leeguoo.com/">关于</a></li>
+                    <li class="item"><a class="link" href="mailto:lee.guo@qunar.com">邮箱</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+    <!-- cover -->
+    <!-- 封面 -->
+    <section class="cover">
+        <img class="cover-img js-cover-img" src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/skin/608.jpg?2"
+             alt="xx">
+        <div class="cover-fullname-logo js-cover-intro">
+            <p class="fullname-logo ymfe">我的<em>个人站</em></p>
+            <p class="fullname-desc">个人站正在逐步修改... 希望不就的将来，他可以完美的展示给大家。</p>
+        </div>
+    </section>
+
+    <div class="main">
+
+        <!-- projects -->
+        <!-- 项目介绍 -->
+        <!-- <div class="row">
+            <section class="content-section project-intro">
+                <div>
+                    <h1 class="content-title">High-Quality Projects</h1>
+                    <p class="content-intro">我们奉行工程师文化，用软件创造世界，改造世界<br/>经历无数业务锤炼后，优质项目将开源分享</p>
+                </div>
+                <ul class="content-list">
+                    <li class="content-item">
+                        <article class="project-main">
+                            <div class="project-cover" onclick="window.open('https://ued.qunar.com/hy2/yo/', '_blank')">
+                                <h4 class="project-title">Yo</h4>
+                            </div>
+                            <div class="project-intro">
+                                <h4 class="project-name"><a class="project-link" href="https://ued.qunar.com/hy2/yo/">高度定制化的UI框架</a>
+                                </h4>
+                                <p class="project-desc">Yo 是一个专注于移动开发的 Front-end UI
+                                    Framework，她轻量，易用，可配置，并且具备超强的扩展能力。</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="content-item">
+                        <article class="project-main">
+                            <div class="project-cover" onclick="window.open('https://ued.qunar.com/hy2/', '_blank')">
+                                <h4 class="project-title">HY2</h4>
+                            </div>
+                            <div class="project-intro">
+                                <h4 class="project-name"><a class="project-link" href="https://ued.qunar.com/hy2/">跨平台移动开发Hybrid解决方案</a>
+                                </h4>
+                                <p class="project-desc">跨平台移动开发Hybrid解决方案，旨在让开发者使用前端技术开发跨平台的移动应用程序。</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="content-item">
+                        <article class="project-main">
+                            <div class="project-cover" onclick="window.open('http://ykit.ymfe.org/', '_blank')">
+                                <h4 class="project-title">YKit</h4>
+                            </div>
+                            <div class="project-intro">
+                                <h4 class="project-name"><a class="project-link"
+                                                            href="http://ykit.ymfe.org/">前端统一构建解决方案</a></h4>
+                                <p class="project-desc">基于 Webpack 的灵活快速的打包工具，帮助稳定高效构建现代 JavaScript 应用。</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="content-item">
+                        <article class="project-main">
+                            <div class="project-cover" onclick="window.open('https://ued.qunar.com/qrn/', '_blank')">
+                                <h4 class="project-title">QRN</h4>
+                            </div>
+                            <div class="project-intro">
+                                <h4 class="project-name"><a class="project-link" href="https://ued.qunar.com/qrn/">快速高效的
+                                    RN 方案</a></h4>
+                                <p class="project-desc">去哪儿增强版 React Native 解决方案，简称 QRN，秉承更快、更好、更统一的初心~</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                <footer>
+                    <button class="ui-btn" onclick="window.open('./projects.html', '_self')">查看更多</button>
+                </footer>
+            </section>
+        </div> -->
+
+        <!-- articles -->
+        <!-- 最新博客 -->
+        <!-- <div class="row row-blog">
+            <section class="content-section articles">
+                <header>
+                    <h1 class="content-title">Latest Articles</h1>
+                    <p class="content-intro">深厚的技术底蕴，源于点滴积累<br/>我们乐于编写博客、经常举办技术分享</p>
+                </header>
+                <ul class="content-blog js-blog-container">
+                </ul>
+                <footer>
+                    <button class="ui-btn" onclick="window.open('https://blog.ymfe.org/', '_blank')">查看更多</button>
+                </footer>
+            </section>
+        </div> -->
+
+        <footer class="m-footer">
+    <span itemprop="copyright">&copy;</span>&nbsp;<span itemprop="copyrightYear">2018</span>
+    <span class="with-love">
+        <i class="icon-next-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">郭立的个人站</span> 京ICP备17022554号-1
+</footer>
+
+    </div>
+
+    <!-- navpage -->
+    <!-- 导航页 -->
+
+    <div class="navpage">
+        <div class="navpage-viewport">
+            <div class="navpage-main content js-navpage-main">
+                <nav class="navpage-nav js-navpage-nav">
+                    <ul>
+                        <li><a data-key="5" href="./index.html">首页</a></li>
+                        <li><a data-key="1" href="https://blog.leeguoo.com/">博客</a></li>
+                        <li><a data-key="0" href="https://weibo.com/12491851">WeiBO</a></li>
+                        <li><a data-key="2" href="https://github.com/leeguooooo">GitHub</a></li>
+                        <li><a data-key="3" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
+                        <li><a data-key="4" href="mailto:lee.guo@qunar.com">邮箱</a></li>
+                    </ul>
+                </nav>
+                <div class="navpage-search js-navpage-search">
+                    <div class="fullname-logo">
+                        <p>Yummy Mobile<br/>Front-end Team</p>
+                    </div>
+                    <div class="navpage-search-wrapper">
+                        <input type="text" class="navpage-search-input js-input" placeholder="搜索发现">
+                        <div class="m-search-help js-search-help">
+                    <span class="m-search-tip">你可以这样搜索：<br>
+                    搜索 API: "getLocation"<br>
+                    搜索 组件: "Dialog"<br>
+                    搜索 文档: "chunk"<br>
+                    搜索 博客: "移动 调试"<br>
+                    搜索 统计: "离线包版本"<br>
+                    搜索 发版记录: "QRN 2.4.0"<br>
+                    ......</span>
+                        </div>
+                        <div class="navpage-search-results" id="result">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navpage-backgrounds js-navpage-backgrounds">
+            <div class="navpage-background projects"></div>
+            <div class="navpage-background articles"></div>
+            <div class="navpage-background github"></div>
+            <div class="navpage-background about"></div>
+        </div>
+    </div>
+
+</div>
+<script src="./scripts/home.js"></script>
+<script src="./scripts/app.js"></script>
+</body>
+</html>
