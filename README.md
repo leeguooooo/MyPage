@@ -1,4 +1,4 @@
-使用 Yeoman 构建 WebApp http://note.youdao.com/noteshare?id=eef3b8c9fc853013d1f901825c9780c5
+- [Using Yeoman to build WebApp](http://note.youdao.com/noteshare?id=eef3b8c9fc853013d1f901825c9780c5)
 
 # MyBlog
 
@@ -14,7 +14,10 @@
 Lightweight front-end framework based on [redux](https://github.com/reactjs/redux), [redux-saga](https://github.com/redux-saga/redux-saga) and [react-router](https://github.com/ReactTraining/react-router). (Inspired by [elm](http://elm-lang.org/) and [choo](https://github.com/yoshuawuyts/choo))
 
 ---
-
+## Quick Start
+- ```npm run dev //Use of project development process, start service, refresh in real time```
+- ```npm run build //After the development is completed, the package file (JS, CSS is packaged separately)```
+-
 ## Features
 
 * **Easy to learn, easy to use**: only 6 apis, very friendly to redux users
@@ -40,11 +43,6 @@ Lightweight front-end framework based on [redux](https://github.com/reactjs/redu
 * [react-native-dva-starter](https://github.com/nihgwu/react-native-dva-starter): A React Native starter powered by dva and react-navigation
 * [dva-example-nextjs](https://github.com/dvajs/dva/tree/master/packages/dva-example-nextjs): Integrate dva with next.js
 * [Account System](https://github.com/yvanwangl/AccountSystem.git): A small inventory management system
-
-## Quick Start
-
-- [Getting Started](https://github.com/dvajs/dva/blob/master/docs/GettingStarted.md)
-- [12 步 30 分钟，完成用户管理的 CURD 应用 (react+dva+antd)](https://github.com/sorrycc/blog/issues/18)
 
 ## FAQ
 
