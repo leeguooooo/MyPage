@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    {% include "./components/head/_index.nj" %}
+    <link rel="stylesheet" href="./styles/joinus.css"/>
+    <link rel="stylesheet" href="./photoWall/photoWall.css">
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+</head>
+<body>
+<div class="m-joinus-page js-page">
+    <!-- aside -->
+    <!-- 侧边栏 -->
+    {% include "./components/aside/_index.nj" %}
+    {% include "./components/header/_index.nj" %}
+    <div class="container">
+        <div class="row m-page-title">
+            <div class="content">
+                <h1 class="title">加入我们</h1>
+                <p class="desc">去哪儿网移动架构组（ YMFE ）2017 首次社招</p>
+                <p class="desc">此次招聘的职级为：q14-q18（ 对应之前的级别为：12-14 ）</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "./components/footer/_index.nj" %}
+<div>
+</div>
+</body>
+<script src="./scripts/app.js"></script>
+</html>

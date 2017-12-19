@@ -8,7 +8,8 @@
     "watch": "gulp watch",
     "serve": "gulp serve",
     "clean": "gulp clean",
-    "dev": "(gulp serve &) && gulp watch"
+    "dev": "(gulp serve &) && gulp watch",
+    "start": "(gulp serve &) && gulp watch"
   },
   "repository": {
     "type": "git",
