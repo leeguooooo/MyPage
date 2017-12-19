@@ -150,7 +150,7 @@
                 </nav>
                 <div class="navpage-search js-navpage-search">
                     <div class="fullname-logo">
-                        <p>Yummy Mobile<br/>Front-end Team</p>
+                        <p>去哪儿网郭立</p>
                     </div>
                     <div class="navpage-search-wrapper">
                         <input type="text" class="navpage-search-input js-input" placeholder="搜索发现">
