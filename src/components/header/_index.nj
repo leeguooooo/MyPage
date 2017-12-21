@@ -8,8 +8,8 @@
                     <li class="item"><a class="link" href="https://github.com/leeguooooo">GitHub</a></li>
                     <li class="item"><a class="link out nav-icon" href="https://weibo.com/12491851">WeiBO</a></li>
                     <li class="item"><a class="link out nav-icon" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
-                    <li class="item"><a class="link" href="https://blog.leeguoo.com/">关于</a></li>
                     <li class="item"><a class="link" href="mailto:lee.guo@qunar.com">邮箱</a></li>
+                    <li class="item"><a class="link out nav-icon" href="https://myblog.leeguoo.com/">关于</a></li>
                 </ul>
             </nav>
         </div>
