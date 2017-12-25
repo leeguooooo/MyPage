@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="js/d3.v4.min.js"></script>
+		<title>Document</title>
+	</head>
+
+	<body style='background:#021531'>
+		<div id="pyramid"></div>
+		<script>
+			/*植被类型*/
+			let vegetation_type = ['人工林', '沼泽', '常绿阔叶灌丛', '灌草丛', '红树林'];
+			/*金字塔每层颜色*/
+			let vegetation_color = [{
+				startColor: '#077cec',
+				endColor: '#126fbf'
+			}, {
+				startColor: '#2c6cff',
+				endColor: '#2783df'
+			}, {
+				startColor: '#628eff',
+				endColor: '#2d74cc'
+			}, {
+				startColor: '#60e9e9',
+				endColor: '#46b7b3'
+			}, {
+				startColor: '#fffe2c',
+				endColor: '#fffe2c'
+			}];
+			/*定义金字塔最大宽度*/
+			let w_pyramid_max = 148;
+			/*定义金字塔最大高度*/
+			let h_pyramid_max = 138;
+			/*每层金字塔的高度*/
+			let h_per = 20;
+			let w_per = 12;
+			/*内层金字塔高度*/
+			let h_per_inside = 6;
+			let w_per_inside = 6;
+			let svg = d3.select('#pyramid')
+				.append('svg')
+				.attr('width', 400)
+				.attr('height', 400);
+
+			function CreatePyramid(tra_x, tra_y, startColor, endColor, path_bot, path_ins) {
+				let set_path_ins=path_ins||'';	
+				let g_contain = svg.append('g')
+					.attr('transform', 'translate(' + tra_x + ',' + tra_y + ')');
+				let g_bottom = g_contain.append('g')
+					.attr('transform', 'translate(0,0)');
+				let path_bottom = g_bottom.append('path')
+					.attr('d', function() {
+						return path_bot;
+					})
+					.attr('fill', startColor);
+				//					.attr('stroke', '#3ed8fb');
+				let g_inside = g_contain.append('g')
+					.attr('transform', 'translate(0,0)');
+				let path_inside = g_inside.append('path')
+					.attr('d', function() {
+						return set_path_ins;	
+					})
+					.attr('fill', endColor);
+			};
+			let [axis_a,axis_b,axis_c,axis_d]=[[],[],[],[]];
+			let [axisIn_a,axisIn_b,axisIn_c,axisIn_d]=[[],[],[],[]];
+			vegetation_type.map((t, i) => {
+				let tra_x = 100; //x轴偏移量
+				let tra_y = 100 - i * 26; //y轴偏移量
+				let startColor = vegetation_color[i].startColor; //外层颜色
+				let endColor = vegetation_color[i].endColor; //内层颜色
+				//外层4个坐标点
+				axis_a=[12.8*(i+1),118];
+				axis_b=[14.8*i,138];
+				axis_c=[w_pyramid_max-14.8*i,h_pyramid_max];
+				axis_d=[w_pyramid_max-12.8*(i+1),118];
+				//里层4个坐标点
+				axisIn_a=[axis_a[0]+6,112];
+				axisIn_b=[axis_a[0],118];
+				axisIn_c=[w_pyramid_max-axis_a[0],118]
+				axisIn_d=[148-axis_a[0]-6*(i+1),112];
+				if(i===4){
+					//最顶层
+					let path_bot = 'M'+w_pyramid_max/2+','+108+'L'+axis_b[0]+','+axis_b[1]+'L'+90+','+axis_c[1]+' Z';
+					CreatePyramid(tra_x, tra_y, startColor, endColor,path_bot);
+				}else{
+					let path_bot = 'M'+axis_a[0]+','+axis_a[1]+'L'+axis_b[0]+','+axis_b[1]+'L'+axis_c[0]+','+axis_c[1]+'L'+axis_d[0]+','+axis_d[1]+' Z';
+				let path_ins = 'M'+axisIn_a[0]+','+axisIn_a[1]+'L'+axisIn_b[0]+','+axisIn_b[1]+'L'+axisIn_c[0]+','+axisIn_c[1]+'L'+axisIn_d[0]+','+axisIn_d[1]+' Z';
+				CreatePyramid(tra_x, tra_y, startColor, endColor,path_bot,path_ins);
+				}				
+			});
+		
+		</script>
+	</body>
+
+</html>

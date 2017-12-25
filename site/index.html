@@ -8,6 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 <meta http-equiv="Cache-Control" content="no-transform"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="google-site-verification" content="unpgIfuUXIXF_7KwU_A0Yqpy9tkr9uKV_Yq_x-wQn7I" />
 <title>郭立lee - 个人博客</title>
 <link rel="apple-touch-icon" href="icon.png"/>
 <link rel="apple-touch-icon-precomposed" href="icon.png"/>
@@ -68,8 +69,10 @@
 
     <!-- cover -->
     <!-- 封面 -->
+    <!-- src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/skin/608.jpg?2"  -->
     <section class="cover">
-        <img class="cover-img js-cover-img" src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/skin/608.jpg?2"
+        <img class="cover-img js-cover-img"
+            src="https://ws1.sinaimg.cn/large/005T0OjCly1fmphkoy49fj31hc0u0abq.jpg"
              alt="xx">
         <div class="cover-fullname-logo js-cover-intro">
             <p class="fullname-logo ymfe">MY  <em>Blog</em></p>
@@ -79,29 +82,45 @@
 
     <div class="main">
 
+        <!-- articles -->
+        <!-- 最新博客 -->
+        <div class="row row-blog">
+            <section class="content-section articles">
+                <header>
+                    <h1 class="content-title">最新文章</h1>
+                    <p class="content-intro">积薄而为厚  聚少而为多<br/></p>
+                </header>
+                <ul class="content-blog js-blog-container">
+                </ul>
+                <footer>
+                    <button class="ui-btn" onclick="window.open('https://去哪儿.我爱你/', '_blank')">查看更多</button>
+                </footer>
+            </section>
+        </div>
+
         <!-- projects -->
         <!-- 项目介绍 -->
         <div class="row">
-            <!-- <section class="content-section project-intro">
+            <section class="content-section project-intro">
                 <div>
-                    <h1 class="content-title">High-Quality Projects</h1>
-                    <p class="content-intro">我们奉行工程师文化，用软件创造世界，改造世界<br/>经历无数业务锤炼后，优质项目将开源分享</p>
+                    <h1 class="content-title">项目案例</h1>
+                    <p class="content-intro"><br/></p>
                 </div>
                 <ul class="content-list">
                     <li class="content-item">
                         <article class="project-main">
-                            <div class="project-cover" onclick="window.open('https://ued.qunar.com/hy2/yo/', '_blank')">
-                                <h4 class="project-title">Yo</h4>
+                            <div class="project-cover" onclick="window.open('https://leeguoo.com/project/d3jinzita/ms.html', '_blank')">
+                                <h4 class="project-title">D3</h4>
                             </div>
                             <div class="project-intro">
-                                <h4 class="project-name"><a class="project-link" href="https://ued.qunar.com/hy2/yo/">高度定制化的UI框架</a>
+                                <h4 class="project-name"><a class="project-link" href="https://leeguoo.com/project/d3jinzita/ms.html">D3实现伪3D效果金字塔</a>
                                 </h4>
-                                <p class="project-desc">Yo 是一个专注于移动开发的 Front-end UI
-                                    Framework，她轻量，易用，可配置，并且具备超强的扩展能力。</p>
+                                <p class="project-desc">根据效果图进行图形绘制，
+                                    要完全掌握d3绘图技巧需要不断深入学习研究。</p>
                             </div>
                         </article>
                     </li>
-                    <li class="content-item">
+                    <!-- <li class="content-item">
                         <article class="project-main">
                             <div class="project-cover" onclick="window.open('https://ued.qunar.com/hy2/', '_blank')">
                                 <h4 class="project-title">HY2</h4>
@@ -136,28 +155,12 @@
                                 <p class="project-desc">去哪儿增强版 React Native 解决方案，简称 QRN，秉承更快、更好、更统一的初心~</p>
                             </div>
                         </article>
-                    </li>
+                    </li> -->
                 </ul>
                 <footer>
-                    <button class="ui-btn" onclick="window.open('./projects.html', '_self')">查看更多</button>
+                    <button class="ui-btn" onclick="window.open('https://去哪儿.我爱你/', '_self')">查看更多</button>
                 </footer>
-            </section> -->
-        </div>
-
-        <!-- articles -->
-        <!-- 最新博客 -->
-        <div class="row row-blog">
-            <!-- <section class="content-section articles">
-                <header>
-                    <h1 class="content-title">Latest Articles</h1>
-                    <p class="content-intro">深厚的技术底蕴，源于点滴积累<br/>我们乐于编写博客、经常举办技术分享</p>
-                </header>
-                <ul class="content-blog js-blog-container">
-                </ul>
-                <footer>
-                    <button class="ui-btn" onclick="window.open('https://blog.ymfe.org/', '_blank')">查看更多</button>
-                </footer>
-            </section> -->
+            </section>
         </div>
 
         <footer class="m-footer">
@@ -193,14 +196,14 @@
                     <div class="navpage-search-wrapper">
                         <input type="text" class="navpage-search-input js-input" placeholder="搜索发现">
                         <div class="m-search-help js-search-help">
-                    <span class="m-search-tip">你可以这样搜索：<br>
+                    <!-- <span class="m-search-tip">你可以这样搜索：<br>
                     搜索 API: "getLocation"<br>
                     搜索 组件: "Dialog"<br>
                     搜索 文档: "chunk"<br>
                     搜索 博客: "移动 调试"<br>
                     搜索 统计: "离线包版本"<br>
                     搜索 发版记录: "QRN 2.4.0"<br>
-                    ......</span>
+                    ......</span> -->
                         </div>
                         <div class="navpage-search-results" id="result">
                         </div>

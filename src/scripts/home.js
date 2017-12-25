@@ -42,7 +42,7 @@ $(function () {
 
   // 获取博客文章数据，生成最近文章列表
   $.ajax({
-    url: 'https://blog.ymfe.org/blog.json',
+    url: 'https://去哪儿.我爱你/blog.json',
     dataType: 'jsonp',
     jsonpCallback: 'blogList',
     success: function (res) {
