@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12884dde-4174-44d3-b6ca-cd0cae27571f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/site/home.html" afterPath="$PROJECT_DIR$/site/home.html" />
-      <change beforePath="$PROJECT_DIR$/site/index.html" afterPath="$PROJECT_DIR$/site/index.html" />
-      <change beforePath="$PROJECT_DIR$/site/styles/about.css" afterPath="$PROJECT_DIR$/site/styles/about.css" />
-      <change beforePath="$PROJECT_DIR$/site/styles/home.css" afterPath="$PROJECT_DIR$/site/styles/home.css" />
-      <change beforePath="$PROJECT_DIR$/site/styles/joinus.css" afterPath="$PROJECT_DIR$/site/styles/joinus.css" />
-      <change beforePath="$PROJECT_DIR$/site/styles/projects.css" afterPath="$PROJECT_DIR$/site/styles/projects.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/aside/_index.scss" afterPath="$PROJECT_DIR$/src/components/aside/_index.scss" />
-      <change beforePath="$PROJECT_DIR$/src/home.nj" afterPath="$PROJECT_DIR$/src/home.nj" />
-      <change beforePath="$PROJECT_DIR$/src/styles/home.scss" afterPath="$PROJECT_DIR$/src/styles/home.scss" />
-    </list>
+    <list default="true" id="12884dde-4174-44d3-b6ca-cd0cae27571f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -169,19 +158,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516713797769</updated>
-      <workItem from="1516713799430" duration="208000" />
+      <workItem from="1516713799430" duration="546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208000" />
+    <option name="totallyTimeSpent" value="546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1738" y="28" width="1643" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-    {% include "./components/head/_index.nj" %}
-    <link rel="stylesheet" type="text/css" href="./styles/home.css"/>
+  {% include "./components/head/_index.nj" %}
+  <link rel="stylesheet" type="text/css" href="./styles/home.css" />
 </head>
+
 <body class="loading default">
-<!-- loading -->
-<!-- 加载页 -->
-<!-- <div class="loading-page">
+  <!-- loading -->
+  <!-- 加载页 -->
+  <!-- <div class="loading-page">
     <div class="loading-icon">
         <div class="loading-progressbar js-loading-progressbar"></div>
         <div class="loading-logo">
@@ -19,16 +21,16 @@
 </div> -->
 
 
-<div class="page js-page">
+  <div class="page js-page">
 
     <!-- aside -->
     <!-- 侧边栏 -->
     <aside class="aside">
-        <div class="nav-icon js-nav-icon">
-            <div class="nav-icon-line top"></div>
-            <div class="nav-icon-line middle"></div>
-            <div class="nav-icon-line bottom"></div>
-        </div>
+      <div class="nav-icon js-nav-icon">
+        <div class="nav-icon-line top"></div>
+        <div class="nav-icon-line middle"></div>
+        <div class="nav-icon-line bottom"></div>
+      </div>
     </aside>
 
     <!-- header -->
@@ -39,68 +41,79 @@
     <!-- 封面 -->
     <!-- src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/skin/608.jpg?2"  -->
     <section class="cover">
-        <img class="cover-img js-cover-img"
-            src="https://ws1.sinaimg.cn/large/005T0OjCly1fmphkoy49fj31hc0u0abq.jpg"
-             alt="xx">
-        <div class="cover-fullname-logo js-cover-intro">
-            <p class="fullname-logo ymfe">MY  <em>Blog</em></p>
-            <p class="fullname-desc">知识若不分享 那将毫无意义</p>
-        </div>
+      <img class="cover-img js-cover-img" src="https://ws1.sinaimg.cn/large/005T0OjCly1fmphkoy49fj31hc0u0abq.jpg" alt="xx">
+      <div class="cover-fullname-logo js-cover-intro">
+        <p class="fullname-logo ymfe">MY <em>Blog</em></p>
+        <p class="fullname-desc">知识若不分享 那将毫无意义</p>
+      </div>
     </section>
 
     <div class="main">
 
-        <!-- articles -->
-        <!-- 最新博客 -->
-        <div class="row row-blog">
-            <section class="content-section articles">
-                <header>
-                    <h1 class="content-title">最新文章</h1>
-                    <p class="content-intro">积薄而为厚  聚少而为多<br/></p>
-                </header>
-                <ul class="content-blog js-blog-container">
-                </ul>
-                <footer>
-                    <button class="ui-btn" onclick="window.open('https://去哪儿.我爱你/', '_blank')">查看更多</button>
-                </footer>
-            </section>
-        </div>
+      <!-- articles -->
+      <!-- 最新博客 -->
+      <div class="row row-blog">
+        <section class="content-section articles">
+          <header>
+            <h1 class="content-title">最新文章</h1>
+            <p class="content-intro">积薄而为厚 聚少而为多<br/></p>
+          </header>
+          <ul class="content-blog js-blog-container">
+          </ul>
+          <footer>
+            <button class="ui-btn" onclick="window.open('https://去哪儿.我爱你/', '_blank')">查看更多</button>
+          </footer>
+        </section>
+      </div>
 
-        <!-- projects -->
-        <!-- 项目介绍 -->
-        <div class="row">
-            <section class="content-section project-intro">
-                <div>
-                    <h1 class="content-title">项目案例</h1>
-                    <p class="content-intro"><br/></p>
+      <!-- projects -->
+      <!-- 项目介绍 -->
+      <div class="row">
+        <section class="content-section project-intro">
+          <div>
+            <h1 class="content-title">项目案例</h1>
+            <p class="content-intro"><br/></p>
+          </div>
+          <ul class="content-list">
+            <li class="content-item">
+              <article class="project-main">
+                <div class="project-cover" onclick="window.open('https://leeguoo.com/pad/', '_blank')">
+                  <h4 class="project-title">pad</h4>
                 </div>
-                <ul class="content-list">
-                    <li class="content-item">
-                        <article class="project-main">
-                            <div class="project-cover" onclick="window.open('https://leeguoo.com/project/d3jinzita/ms.html', '_blank')">
-                                <h4 class="project-title">D3</h4>
-                            </div>
-                            <div class="project-intro">
-                                <h4 class="project-name"><a class="project-link" href="https://leeguoo.com/project/d3jinzita/ms.html">D3实现伪3D效果金字塔</a>
+                <div class="project-intro">
+                  <h4 class="project-name"><a class="project-link" href="https://leeguoo.com/pad/">Les's Pad</a>
+                              </h4>
+                  <p class="project-desc">多人实时文本编辑</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="content-item">
+              <article class="project-main">
+                <div class="project-cover" onclick="window.open('https://leeguoo.com/ceq2018/', '_blank')">
+                  <h4 class="project-title">奖</h4>
+                </div>
+                <div class="project-intro">
+                  <h4 class="project-name"><a class="project-link" href="https://leeguoo.com/ceq2018/">CEQ2018Lottery</a>
                                 </h4>
-                                <p class="project-desc">根据效果图进行图形绘制，
-                                    要完全掌握d3绘图技巧需要不断深入学习研究。</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="content-item">
-                        <article class="project-main">
-                            <div class="project-cover" onclick="window.open('https://leeguoo.com/ceq2018/', '_blank')">
-                                <h4 class="project-title">奖</h4>
-                            </div>
-                            <div class="project-intro">
-                                <h4 class="project-name"><a class="project-link" href="https://leeguoo.com/ceq2018/">CEQ2018Lottery</a>
+                  <p class="project-desc">携程 艺龙 去哪儿 联合年会抽奖程序</p>
+                </div>
+              </article>
+            </li>
+            <li class="content-item">
+              <article class="project-main">
+                <div class="project-cover" onclick="window.open('https://leeguoo.com/project/d3jinzita/ms.html', '_blank')">
+                  <h4 class="project-title">D3</h4>
+                </div>
+                <div class="project-intro">
+                  <h4 class="project-name"><a class="project-link" href="https://leeguoo.com/project/d3jinzita/ms.html">D3实现伪3D效果金字塔</a>
                                 </h4>
-                                <p class="project-desc">携程 艺龙 去哪儿 联合年会抽奖程序</p>
-                            </div>
-                        </article>
-                    </li>
-                    <!-- <li class="content-item">
+                  <p class="project-desc">根据效果图进行图形绘制， 要完全掌握d3绘图技巧需要不断深入学习研究。
+                  </p>
+                </div>
+              </article>
+            </li>
+            <!-- <li class="content-item">
                         <article class="project-main">
                             <div class="project-cover" onclick="window.open('https://ued.qunar.com/hy2/', '_blank')">
                                 <h4 class="project-title">HY2</h4>
@@ -136,40 +149,40 @@
                             </div>
                         </article>
                     </li> -->
-                </ul>
-                <footer>
-                    <button class="ui-btn" onclick="window.open('https://去哪儿.我爱你/', '_self')">查看更多</button>
-                </footer>
-            </section>
-        </div>
+          </ul>
+          <footer>
+            <button class="ui-btn" onclick="window.open('https://去哪儿.我爱你/', '_self')">查看更多</button>
+          </footer>
+        </section>
+      </div>
 
-        {% include "./components/footer/_index.nj" %}
+      {% include "./components/footer/_index.nj" %}
     </div>
 
     <!-- navpage -->
     <!-- 导航页 -->
 
     <div class="navpage">
-        <div class="navpage-viewport">
-            <div class="navpage-main content js-navpage-main">
-                <nav class="navpage-nav js-navpage-nav">
-                    <ul>
-                        <li><a data-key="5" href="./index.html">首页</a></li>
-                        <li><a data-key="1" href="https://xn--v4q63d8za.xn--6qq986b3xl/">博客</a></li>
-                        <li><a data-key="0" href="https://weibo.com/12491851">WeiBO</a></li>
-                        <li><a data-key="2" href="https://github.com/leeguooooo">GitHub</a></li>
-                        <li><a data-key="3" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
-                        <li><a data-key="4" href="mailto:lee.guo@qunar.com">邮箱</a></li>
-                    </ul>
-                </nav>
-                <div class="navpage-search js-navpage-search">
-                    <div class="fullname-logo">
-                        <p>去哪儿网郭立</p>
-                    </div>
-                    <div class="navpage-search-wrapper">
-                        <input type="text" class="navpage-search-input js-input" placeholder="搜索发现">
-                        <div class="m-search-help js-search-help">
-                    <!-- <span class="m-search-tip">你可以这样搜索：<br>
+      <div class="navpage-viewport">
+        <div class="navpage-main content js-navpage-main">
+          <nav class="navpage-nav js-navpage-nav">
+            <ul>
+              <li><a data-key="5" href="./index.html">首页</a></li>
+              <li><a data-key="1" href="https://xn--v4q63d8za.xn--6qq986b3xl/">博客</a></li>
+              <li><a data-key="0" href="https://weibo.com/12491851">WeiBO</a></li>
+              <li><a data-key="2" href="https://github.com/leeguooooo">GitHub</a></li>
+              <li><a data-key="3" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
+              <li><a data-key="4" href="mailto:lee.guo@qunar.com">邮箱</a></li>
+            </ul>
+          </nav>
+          <div class="navpage-search js-navpage-search">
+            <div class="fullname-logo">
+              <p>去哪儿网郭立</p>
+            </div>
+            <div class="navpage-search-wrapper">
+              <input type="text" class="navpage-search-input js-input" placeholder="搜索发现">
+              <div class="m-search-help js-search-help">
+                <!-- <span class="m-search-tip">你可以这样搜索：<br>
                     搜索 API: "getLocation"<br>
                     搜索 组件: "Dialog"<br>
                     搜索 文档: "chunk"<br>
@@ -177,23 +190,24 @@
                     搜索 统计: "离线包版本"<br>
                     搜索 发版记录: "QRN 2.4.0"<br>
                     ......</span> -->
-                        </div>
-                        <div class="navpage-search-results" id="result">
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="navpage-search-results" id="result">
+              </div>
             </div>
+          </div>
         </div>
-        <div class="navpage-backgrounds js-navpage-backgrounds">
-            <div class="navpage-background projects"></div>
-            <div class="navpage-background articles"></div>
-            <div class="navpage-background github"></div>
-            <div class="navpage-background about"></div>
-        </div>
+      </div>
+      <div class="navpage-backgrounds js-navpage-backgrounds">
+        <div class="navpage-background projects"></div>
+        <div class="navpage-background articles"></div>
+        <div class="navpage-background github"></div>
+        <div class="navpage-background about"></div>
+      </div>
     </div>
 
-</div>
-<script src="./scripts/home.js"></script>
-<script src="./scripts/app.js"></script>
+  </div>
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts/app.js"></script>
 </body>
+
 </html>
