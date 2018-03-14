@@ -17,6 +17,31 @@
 <script type="text/javascript" src="./scripts/jquery.min.js"></script>
 <script type="text/javascript" src="./scripts/responsive-nav.min.js"></script>
 <script type="text/javascript" src="https://g.ymfe.org/data.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script>
+//百度统计
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8eacd23920fc674bbf46c5f530b71c39";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467496-1"></script>
+<script>
+//谷歌统计
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115467496-1');
+</script>
 
   <link rel="stylesheet" type="text/css" href="./styles/home.css" />
 </head>
@@ -24,16 +49,132 @@
 <body class="loading default">
   <!-- loading -->
   <!-- 加载页 -->
-  <!-- <div class="loading-page">
-    <div class="loading-icon">
+<div class="loading-page">
+  <!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CSS3 3D立方体Loading加载动画特效DEMO演示</title>
+
+    <style>
+    body {
+      background-color: #dedede;
+      font-size: 12px;
+    }
+
+    .base {
+      height: 9em;
+      left: 50%;
+      margin: -7.5em;
+      padding: 3em;
+      position: absolute;
+      top: 50%;
+      width: 9em;
+      transform: rotateX(45deg) rotateZ(45deg);
+      transform-style: preserve-3d;
+    }
+
+    .cube,
+    .cube:after,
+    .cube:before {
+      content: '';
+      float: left;
+      height: 3em;
+      position: absolute;
+      width: 3em;
+    }
+
+    /* Top */
+    .cube {
+      background-color: #05afd1;
+      position: relative;
+      transform: translateZ(3em);
+      transform-style: preserve-3d;
+      transition: .25s;
+      box-shadow: 13em 13em 1.5em rgba(0, 0, 0, 0.1);
+      animation: anim 1s infinite;
+    }
+    .cube:after {
+      background-color: #049dbc;
+      transform: rotateX(-90deg) translateY(3em);
+      transform-origin: 100% 100%;
+    }
+    .cube:before {
+      background-color: #048ca7;
+      transform: rotateY(90deg) translateX(3em);
+      transform-origin: 100% 0;
+    }
+    .cube:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+    .cube:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    .cube:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+    .cube:nth-child(4) {
+      animation-delay: 0.2s;
+    }
+    .cube:nth-child(5) {
+      animation-delay: 0.25s;
+    }
+    .cube:nth-child(6) {
+      animation-delay: 0.3s;
+    }
+    .cube:nth-child(7) {
+      animation-delay: 0.35s;
+    }
+    .cube:nth-child(8) {
+      animation-delay: 0.4s;
+    }
+    .cube:nth-child(9) {
+      animation-delay: 0.45s;
+    }
+
+    @keyframes anim {
+      50% {
+        transform: translateZ(0.5em);
+      }
+    }
+
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+<div style="text-align:center;clear:both;">
+</div>
+  <div class='base'>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+  <div class='cube'></div>
+</div>
+
+</body>
+
+</html>
+
+    <!--<div class="loading-icon">
         <div class="loading-progressbar js-loading-progressbar"></div>
         <div class="loading-logo">
         <?xml version="1.0" encoding="UTF-8"?>
          include "./components/svg/ymfe.svg"
         </div>
         <p class="loading-text js-loading-text"></p>
-    </div>
-</div> -->
+    </div>-->
+</div>
 
 
   <div class="page js-page">
@@ -57,6 +198,7 @@
             <nav class="nav-collapse m-nav">
                 <ul class="m-nav-ul">
                     <li class="item"><a class="link out nav-icon" href="https://xn--v4q63d8za.xn--6qq986b3xl/">博客</a></li>
+                    <li class="item"><a class="link out nav-icon" href="book.html">图书</a></li>
                     <li class="item"><a class="link" href="https://github.com/leeguooooo">GitHub</a></li>
                     <li class="item"><a class="link out nav-icon" href="https://weibo.com/12491851">WeiBO</a></li>
                     <li class="item"><a class="link out nav-icon" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
@@ -207,6 +349,10 @@
         <i class="icon-next-heart"></i>
     </span>
     <span class="author" itemprop="copyrightHolder">郭立的个人站(去哪儿郭立/郭立lee)</span> 京ICP备17022554号-1
+    </br></br>
+    <span id="busuanzi_container_site_uv" class="feed-link motion-element" >
+      本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    </span>
 </footer>
 
     </div>

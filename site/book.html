@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="google-site-verification" content="unpgIfuUXIXF_7KwU_A0Yqpy9tkr9uKV_Yq_x-wQn7I" />
+<title>郭立lee - 个人博客</title>
+<link rel="apple-touch-icon" href="icon.png"/>
+<link rel="apple-touch-icon-precomposed" href="icon.png"/>
+<link rel="shortcut icon" href="./favicon.ico"/>
+<script type="text/javascript" src="./scripts/jquery.min.js"></script>
+<script type="text/javascript" src="./scripts/responsive-nav.min.js"></script>
+<script type="text/javascript" src="https://g.ymfe.org/data.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script>
+//百度统计
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8eacd23920fc674bbf46c5f530b71c39";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115467496-1"></script>
+<script>
+//谷歌统计
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115467496-1');
+</script>
+
+    <link rel="stylesheet" href="./styles/joinus.css"/>
+    <link rel="stylesheet" href="./photoWall/photoWall.css">
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+</head>
+<body>
+<div class="m-joinus-page js-page">
+    <!-- aside -->
+    <!-- 侧边栏 -->
+    <aside class="aside">
+    <div class="nav-icon js-nav-icon">
+        <div class="nav-icon-line top"></div>
+        <div class="nav-icon-line middle"></div>
+        <div class="nav-icon-line bottom"></div>
+    </div>
+</aside>
+<div class="navpage">
+    <div class="navpage-viewport">
+        <div class="navpage-main navpage-content js-navpage-main">
+            <nav class="navpage-nav js-navpage-nav">
+                <ul>
+                    <li><a data-key="5" href="./index.html">首页</a></li>
+                    <li><a data-key="1" href="https://blog.ymfe.org/">博客</a></li>
+                    <li><a data-key="0" href="./projects.html">团队项目</a></li>
+                    <li><a data-key="2" href="https://github.com/ymfe">Github</a></li>
+                    <li><a data-key="3" href="./about.html">关于</a></li>
+                    <li><a data-key="4" href="./joinus.html">加入我们</a></li>
+                </ul>
+            </nav>
+            <div class="navpage-search js-navpage-search">
+                <div class="fullname-logo">
+                    <p>Yummy Mobile<br/>Front-end Team</p>
+                </div>
+                <div class="navpage-search-wrapper">
+                    <input type="text" class="navpage-search-input js-input" placeholder="搜索发现 YMFE">
+                    <div class="m-search-help js-search-help">
+                    <span class="m-search-tip">你可以这样搜索：<br>
+                    搜索 API: "getLocation"<br>
+                    搜索 组件: "Dialog"<br>
+                    搜索 文档: "chunk"<br>
+                    搜索 博客: "移动 调试"<br>
+                    搜索 统计: "离线包版本"<br>
+                    搜索 发版记录: "QRN 2.4.0"<br>
+                    ......</span>
+                    </div>
+                    <div class="navpage-search-results" id="result">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navpage-backgrounds js-navpage-backgrounds">
+        <div class="navpage-background projects"></div>
+        <div class="navpage-background articles"></div>
+        <div class="navpage-background github"></div>
+        <div class="navpage-background about"></div>
+    </div>
+</div>
+
+<script>
+  // body 滚动
+  function freeze(e) {
+    e.preventDefault();
+  };
+  function stopBodyScrolling(bool) {
+    if (bool === true) {
+      // console.log('stop')
+      document.body.addEventListener("touchmove", freeze, {passive: false});
+    } else {
+      document.body.removeEventListener("touchmove", freeze, {passive: false});
+    }
+  }
+    //  点击隐藏滚动条
+   function hiddenScrollbar(overflow) {
+    overflow = overflow === 'hidden' ? '' : 'hidden';
+    document.documentElement.style.overflow = overflow;
+    // 补充上滚动条的宽度
+    var $h = $('html');
+    w1 = $(window).width();
+    $h.addClass('fancybox-lock-test');
+    w2 = $(window).width();
+    $h.removeClass('fancybox-lock-test');
+    $("<style type='text/css'>.fancybox-margin{margin-right:" + (w2 - w1) + "px;}</style>").appendTo("head");
+  }
+</script>
+<script>
+  var isSupportsTouches = ("createTouch" in document),
+    dNavpageBackgrounds = $('.js-navpage-backgrounds');
+
+  // 鼠标点击变 ✘  出现图片
+  var dNavIcon = $('.js-nav-icon'),
+    dNavpageNav = $('.js-navpage-nav');
+  dPage = $('.js-page');
+
+  function onNavpageNavHover(e) {
+    var navKey = parseInt($(e.target).data('key'), 10);
+    if (navKey >= 0 && navKey < 4) {
+      var curBg = dNavpageBackgrounds.children().eq(navKey).toggleClass('active');
+    }
+  }
+
+  dNavpageNav.on('mouseover', 'li a', onNavpageNavHover);
+  dNavpageNav.on('mouseout', 'li a', onNavpageNavHover);
+
+  /* (function () {
+   dNavIcon.click(function () {
+   dNavIcon.toggleClass('x');
+   dPage.toggleClass('navpage-show');
+   // 当加载页显示时禁止触摸事件。
+   //stopBodyScrolling(dPage.hasClass('navpage-show'));
+   });
+   })();*/
+
+  dNavIcon.click(function () {
+    dNavIcon.toggleClass('x');
+    dPage.toggleClass('navpage-show');
+    // 当加载页显示时禁止触摸事件。
+    stopBodyScrolling(dPage.hasClass('navpage-show'));
+    // 禁止页面出现滚动条
+    hiddenScrollbar( document.documentElement.style.overflow );
+  });
+
+  // 滚动
+  // 图片加载
+  // stopBodyScrolling(true); // 当加载页显示时禁止触摸事件。
+  // search
+  var dNavpageMain = $('.js-navpage-main');
+  var dInput = $('.js-input');
+  function getKeyWord() {
+    return dInput.val().trim();
+  }
+  function doSearch(keyWord) {
+    var keyWords = keyWord.toLowerCase().split(' ').filter(function (t) {
+        return !!t;
+      }),
+      result = [];
+    if (keyWord) {
+      for (var i = 0, l = searchData.length - 1; i <= l; i++) {
+        var item = searchData[i];
+        if (keyWords.every(function (key) {
+            return item.title.toLowerCase().indexOf(key) > -1 || item.url.indexOf(key) > -1;
+          })) {
+          result.push(item);
+        }
+        if (result.length === 5) {
+          break;
+        }
+      }
+    }
+    index = -1;
+    if (result.length && result.length > 0) {
+      var resultHtml = '';
+      $("#result").show();
+      result.forEach((item) => {
+        resultHtml += '<li><a target="_blank" href="' + item.url + '"><p class="result-title">' + item.title + '</p><p class="result-url">' + item.url + '</p></a></li>'
+      })
+      $("#result").html('<ul>' + resultHtml + '</ul>');
+    } else {
+      $("#result").html('');
+    }
+  }
+  var timeout;
+  var index = -1;
+  dInput.bind('input propertychange', function (e) {
+    var keyWord = getKeyWord();
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+    timeout = setTimeout(function () {
+      timeout = null;
+      doSearch(keyWord);
+    }, 500);
+  }).bind('keydown', function (e) {
+    if (e.keyCode == 40) {
+      index++;
+      $('#result .active').removeClass('active');
+      // console.log(index % $('#result li').length);
+      $('#result li').eq(index % $('#result li').length).addClass('active');
+      e.preventDefault();
+    } else if (e.keyCode == 38) {
+      if (index > 0) {
+        index--;
+        $('#result .active').removeClass('active');
+        $('#result li').eq(index % $('#result li').length).addClass('active');
+      }
+      e.preventDefault();
+    } else if (e.keyCode == 13) {
+      if ($('#result li').length) {
+        if (index === -1) {
+          index = 0;
+        }
+        window.open($('#result li').eq(index % $('#result li').length).find('a').attr('href'));
+      } else {
+        window.open('https://www.google.com/search?q=' + getKeyWord(), '_blank');
+      }
+    }
+  });
+  if (!isSupportsTouches) {
+    dInput.focus(function () {
+      dNavpageMain.addClass('inputFocus');
+    });
+    dInput.blur(function () {
+      setTimeout(function () {
+        dInput.val('');
+        $("#result").html('');
+        $('#result').hide();
+        dNavpageMain.removeClass('inputFocus');
+      }, 200);
+    });
+  }
+  var dpr = window.devicePixelRatio;
+  if (dpr >= 2) {
+    $('.js-search-help').css({
+      backgroundImage: 'url(https://ws1.sinaimg.cn/large/006cGJIjly1fknu5qgh27j301401at8h.jpg)'
+    });
+  }
+</script>
+
+    <header class="header">
+    <div class="container m-header-container">
+        <div class="header-logo"><a class="link ymfe" href="./index.html">首页</a></div>
+        <div class="m-header-nav">
+            <nav class="nav-collapse m-nav">
+                <ul class="m-nav-ul">
+                    <li class="item"><a class="link out nav-icon" href="https://xn--v4q63d8za.xn--6qq986b3xl/">博客</a></li>
+                    <li class="item"><a class="link out nav-icon" href="book.html">图书</a></li>
+                    <li class="item"><a class="link" href="https://github.com/leeguooooo">GitHub</a></li>
+                    <li class="item"><a class="link out nav-icon" href="https://weibo.com/12491851">WeiBO</a></li>
+                    <li class="item"><a class="link out nav-icon" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>
+                    <li class="item"><a class="link" href="mailto:lee.guo@qunar.com">邮箱</a></li>
+                    <li class="item"><a class="link out nav-icon" href="https://myblog.leeguoo.com/">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <div class="container">
+        <div class="row m-page-title">
+            <div class="content">
+                <h1 class="title">BOOK</h1>
+                <p class="desc">一些收藏的PDF</p>
+                <p class="desc">只做技术学习，请勿他用。</p>
+            </div>
+
+            </br></br><a class="link out nav-icon" href="book/流畅的python-Luciano+Ramalho.pdf">流畅的python-Luciano+Ramalho</a>
+            </br></br><a class="link out nav-icon" href="book/[高性能JavaScript编程].(High.Performance.JavaScript).Nicholas.C.Zakas.中英对照版.pdf">[高性能JavaScript编程].(High.Performance.JavaScript).Nicholas.C.Zakas.中英对照版</a>
+            </br></br><a class="link out nav-icon" href="book/[高性能JavaScript编程].(High.Performance.JavaScript).Nicholas.C.Zakas.文字版.pdf">[高性能JavaScript编程].(High.Performance.JavaScript).Nicholas.C.Zakas.文字版</a>
+            </br></br><a class="link out nav-icon" href="book/Flask Web开发：基于Python的Web应用开发实战.pdf">Flask Web开发：基于Python的Web应用开发实战</a>
+
+
+          </br>
+          </br>
+          </br>
+        </div>
+    </div>
+</div>
+<footer class="m-footer">
+    <span itemprop="copyright">&copy;</span>&nbsp;<span itemprop="copyrightYear">2018</span>
+    <span class="with-love">
+        <i class="icon-next-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">郭立的个人站(去哪儿郭立/郭立lee)</span> 京ICP备17022554号-1
+    </br></br>
+    <span id="busuanzi_container_site_uv" class="feed-link motion-element" >
+      本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    </span>
+</footer>
+
+<div>
+</div>
+</body>
+<script src="./scripts/app.js"></script>
+</html>

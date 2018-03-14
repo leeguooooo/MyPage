@@ -9,16 +9,17 @@
 <body class="loading default">
   <!-- loading -->
   <!-- 加载页 -->
-  <!-- <div class="loading-page">
-    <div class="loading-icon">
+<div class="loading-page">
+  {% include "./project/loading/index.nj" %}
+    <!--<div class="loading-icon">
         <div class="loading-progressbar js-loading-progressbar"></div>
         <div class="loading-logo">
         <?xml version="1.0" encoding="UTF-8"?>
          include "./components/svg/ymfe.svg"
         </div>
         <p class="loading-text js-loading-text"></p>
-    </div>
-</div> -->
+    </div>-->
+</div>
 
 
   <div class="page js-page">

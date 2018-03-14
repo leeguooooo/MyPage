@@ -47,7 +47,7 @@ $(function () {
     jsonpCallback: 'blogList',
     success: function (res) {
       var str = '';
-      res.forEach(function (item, index) {
+      res.reverse().forEach(function (item, index) {
         if (index <= 5) {
           str += `<li class="blog-item" onclick="window.open('${item.path}', '_self')">
                   <article class="m-article">
@@ -109,7 +109,7 @@ $(function () {
         clearTimeout(timeout);
         $(document.body).removeClass('default');
       }, 100)
-    }, 400);
+    }, 1500);
   }
 
   dCoverImg.load(onCoverLoad);

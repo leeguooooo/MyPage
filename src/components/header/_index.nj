@@ -5,6 +5,7 @@
             <nav class="nav-collapse m-nav">
                 <ul class="m-nav-ul">
                     <li class="item"><a class="link out nav-icon" href="https://xn--v4q63d8za.xn--6qq986b3xl/">博客</a></li>
+                    <li class="item"><a class="link out nav-icon" href="book.html">图书</a></li>
                     <li class="item"><a class="link" href="https://github.com/leeguooooo">GitHub</a></li>
                     <li class="item"><a class="link out nav-icon" href="https://weibo.com/12491851">WeiBO</a></li>
                     <li class="item"><a class="link out nav-icon" href="https://www.zhihu.com/people/lee-guo-27/activities">知乎</a></li>

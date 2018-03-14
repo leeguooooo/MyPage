@@ -4,4 +4,8 @@
         <i class="icon-next-heart"></i>
     </span>
     <span class="author" itemprop="copyrightHolder">郭立的个人站(去哪儿郭立/郭立lee)</span> 京ICP备17022554号-1
+    </br></br>
+    <span id="busuanzi_container_site_uv" class="feed-link motion-element" >
+      本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    </span>
 </footer>
