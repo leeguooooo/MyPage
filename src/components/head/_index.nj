@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="./favicon.ico"/>
 <script type="text/javascript" src="./scripts/jquery.min.js"></script>
 <script type="text/javascript" src="./scripts/responsive-nav.min.js"></script>
-<script type="text/javascript" src="https://g.ymfe.org/data.js"></script>
+<script type="text/javascript" src="./data.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 

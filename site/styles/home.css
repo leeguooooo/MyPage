@@ -702,7 +702,6 @@ body {
 }
 
 .aside {
-  display: none;
   background: #333;
   width: 60px;
   height: 60px;
@@ -2000,7 +1999,7 @@ body {
   left: 0;
   background-position: center;
   background-size: cover;
-  background-image: url(https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/skin/404.jpg?2);
+  background-image: url(https://ws1.sinaimg.cn/large/005T0OjCly1fpcjd72ljvj318g0rsdim.jpg);
 }
 
 .navpage-backgrounds:after {

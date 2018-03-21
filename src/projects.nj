@@ -3,7 +3,7 @@
 <head>
     {% include "./components/head/_index.nj" %}
     <link rel="stylesheet" href="./styles/projects.css"/>
-    <script type="text/javascript" src="https://g.ymfe.org/data.js"></script>
+    <script type="text/javascript" src="./data.js"></script>
 </head>
 <body>
 <div class="m-projects-page js-page">

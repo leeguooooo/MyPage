@@ -191,19 +191,15 @@
           </nav>
           <div class="navpage-search js-navpage-search">
             <div class="fullname-logo">
-              <p>去哪儿网郭立</p>
+              <p>Search</p>
             </div>
             <div class="navpage-search-wrapper">
               <input type="text" class="navpage-search-input js-input" placeholder="搜索发现">
               <div class="m-search-help js-search-help">
-                <!-- <span class="m-search-tip">你可以这样搜索：<br>
-                    搜索 API: "getLocation"<br>
-                    搜索 组件: "Dialog"<br>
-                    搜索 文档: "chunk"<br>
-                    搜索 博客: "移动 调试"<br>
-                    搜索 统计: "离线包版本"<br>
-                    搜索 发版记录: "QRN 2.4.0"<br>
-                    ......</span> -->
+                <span class="m-search-tip">你可以这样搜索：<br>
+                    搜索 RN: "react native"<br>
+                    搜索 ES6: "es6"<br>
+                    ......</span>
               </div>
               <div class="navpage-search-results" id="result">
               </div>
